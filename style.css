@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaldi&display=swap');
+
+body {
+  font-family: 'Jaldi', sans-serif;
+  line-height: 1.5;
+  background-color: #FFFFFF;
+}
+
+#navbar {
+  position: fixed;
+  margin-left: 30px;
+  height: 100%;
+  width: 250px;
+}
+
+#navbar header {
+  color: #4B0082;
+  font-weight: bold;
+  font-size: 35px;
+  text-align: center;
+  margin: auto;
+}
+
+header {
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 400px;
+  margin-top: 15px;
+}
+
+#navbar ul {
+  list-style: none;
+  line-height: 2.5;
+  font-size: 1.2em;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+ }
+
+.nav-link:hover {
+  text-decoration: underline;
+  color: #4B0082;
+}
+
+.main-section {
+  display: grid;
+  justify-content: start;
+  word-break: normal;
+  word-wrap: normal;
+}
+
+section article {
+  color: #4d4e53;
+  margin: 10px 50px 15px 400px;
+  font-size: 0.96em;
+}
+section li {
+  margin: 15px 0px 0px 20px;
+}
+
+hr { 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: solid;
+  border-width: 100%;
+  color: #4B0082;
+}
+
+code {
+  display: block;
+  position: relative;
+  text-align: left;
+  white-space: pre;
+  line-height: 2;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: #EFEFEF;
+}
+
+@media only screen and (max-width: 760px) {
+  #navbar ul {
+    font-size: 0.9em;
+  }
+
+  #navbar {
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 275px;
+    border: none;
+    z-index: 1;
+  }
+
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 270px;
+  }
+}
+
+
+@media only screen and (max-width: 400px) {
+  #main-doc {
+    margin-left: -10px;
+  }
+
+  code {
+    margin-left: -20px;
+    width: 100%;
+    padding: 15px 25px 15px 60px;
+    min-width: 233px;
+  }
+}
